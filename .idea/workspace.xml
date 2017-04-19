@@ -1,0 +1,1897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <ignored path="JavaFxApplication.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="JavaFxApplication" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GameManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/GameManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+              <folding>
+                <element signature="docComment;class#GameManager#0" expanded="false" />
+                <element signature="docComment;field#slider#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;field#context#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;field#view#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;field#toolbar#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;field#infoDisplay#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;field#winningValue#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#GameManager#0;class#GameManager#0" expanded="false" />
+                <element signature="method#setStartMenu#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#buildToolbar#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#getResizeInputStructure#0;class#GameManager#0" expanded="false" />
+                <element signature="method#getResizeInputStructure#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#bindKeys#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#undoState#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#onSlide#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#reset#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#onCellMoved#0;class#GameManager#0" expanded="false" />
+                <element signature="method#onCellMoved#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#onCellValueChanged#0;class#GameManager#0" expanded="false" />
+                <element signature="method#onCellValueChanged#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#onGameStatusChanged#0;class#GameManager#0" expanded="false" />
+                <element signature="method#onGameStatusChanged#0;class#GameManager#0" expanded="false" />
+                <element signature="docComment;method#onSlideComplete#0;class#GameManager#0" expanded="false" />
+                <element signature="method#onSlideComplete#0;class#GameManager#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameTilePane.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+              <folding>
+                <element signature="docComment;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;field#ANIMATING#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;field#PADDING#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;field#TRANSLATE_DURATION#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;field#SLIDE_TRANSITION#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;field#FADE_IN_DURATION#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;field#viewOverlay#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;field#rows#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;field#columns#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#GameTilePane#0;class#GameTilePane#0" expanded="false" />
+                <element signature="method#GameTilePane#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#initialize#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#changeBoardSize#0;class#GameTilePane#0" expanded="false" />
+                <element signature="e#4153#4154#0" expanded="true" />
+                <element signature="e#4181#4182#0" expanded="true" />
+                <element signature="docComment;method#placeCell#0;class#GameTilePane#0" expanded="false" />
+                <element signature="method#placeCell#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#replaceCell#0;class#GameTilePane#0" expanded="false" />
+                <element signature="method#replaceCell#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#moveCell#0;class#GameTilePane#0" expanded="false" />
+                <element signature="method#moveCell#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#moveAndMerge#0;class#GameTilePane#0" expanded="false" />
+                <element signature="method#moveAndMerge#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#createValueChangeAnim#0;class#GameTilePane#0" expanded="false" />
+                <element signature="method#createValueChangeAnim#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#getCell#0;class#GameTilePane#0" expanded="false" />
+                <element signature="method#getCell#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#createCellMoveAnimation#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#fadeInToFull#0;class#GameTilePane#0" expanded="false" />
+                <element signature="method#fadeInToFull#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#isAnimating#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#displayGameMessage#0;class#GameTilePane#0" expanded="false" />
+                <element signature="docComment;method#removeGameMessage#0;class#GameTilePane#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CellView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/GameBoard.java" />
+        <option value="$PROJECT_DIR$/src/sample/GameView.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/GameView.java" />
+        <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/SlideDirection.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameView.java" />
+        <option value="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/View.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameToolbar.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameView.fxml" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/custom_toolbar.fxml" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/custom_tilepane.fxml" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/customtilepane.fxml" />
+        <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/interfaces/NumberSlider.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/ScoreBoard.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Cell.java" />
+        <option value="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/InputUtil.java" />
+        <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Cell.java" />
+        <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/UndoStack.java" />
+        <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/interfaces/NumberSliderObserver.java" />
+        <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/ScoreBoard.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Main.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Game.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/FxToolbar.java" />
+        <option value="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/HUD.java" />
+        <option value="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/GameView.java" />
+        <option value="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/GameToolbar.java" />
+        <option value="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/GameAction.java" />
+        <option value="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/Context.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/GameView.fxml" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java" />
+        <option value="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/GameManager.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1915" />
+    <option name="y" value="-25" />
+    <option name="width" value="1930" />
+    <option name="height" value="1110" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="PackagesPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fxml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="preston" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edu.gvsu.prestongarno.gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="view">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="project3">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="view">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="project3">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="edu/gvsu/prestongarno/gui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.27668658" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3" />
+      <recent name="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/" />
+      <recent name="$PROJECT_DIR$/presenter/src/edu/gvsu/preston" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.No GPU">
+    <configuration default="false" name="Force GPU" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.gvsu.prestongarno.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="edu.gvsu.prestongarno.gui.Main" />
+      <option name="VM_PARAMETERS" value="-Dprism.forceGPU=true" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="view" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="project3" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="false" name="No GPU" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="edu.gvsu.prestongarno.gui.Main" />
+      <option name="VM_PARAMETERS" value="-Dprism.order=sw" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="view" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.No GPU" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Force GPU" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Force GPU" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1489885300692" duration="4108000" />
+      <workItem from="1489958271723" duration="1366000" />
+      <workItem from="1489960404945" duration="1490000" />
+      <workItem from="1489962705976" duration="4826000" />
+      <workItem from="1490040696335" duration="52523000" />
+      <workItem from="1490107208432" duration="8283000" />
+      <workItem from="1490110454709" duration="9629000" />
+      <workItem from="1490153261695" duration="3442000" />
+      <workItem from="1490225637180" duration="39621000" />
+      <workItem from="1490286934340" duration="1020000" />
+      <workItem from="1490288392511" duration="125000" />
+      <workItem from="1490316907233" duration="606000" />
+      <workItem from="1492555945228" duration="1902000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="130243000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1915" y="-25" width="1930" height="1110" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32864583" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22864583" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.37756202" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="847" y="36" width="1073" height="1044" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Memory View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="2020" y="71" width="1343" height="909" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java</url>
+          <line>486</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java</url>
+          <line>407</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java</url>
+          <line>200</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java</url>
+          <line>297</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="47" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((NumberGame)this).score" custom="edu.gvsu.cis163.project3.NumberGame" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/GameView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3294">
+          <caret line="318" column="0" lean-forward="false" selection-start-line="318" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#status#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#rows#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#board#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#winningVal#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#NumberGame#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#NumberGame#1;class#NumberGame#0" expanded="false" />
+            <element signature="method#NumberGame#1;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#createInstance#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getAt#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getAt#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getRows#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getColumns#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#resizeBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#resizeBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#reset#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#reset#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#placeRandomValue#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#placeRandomValue#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#setValues#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#setValues#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getIndex#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getIndex#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#slide#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#slide#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#slide#1;class#NumberGame#0" expanded="false" />
+            <element signature="method#slide#1;class#NumberGame#0" expanded="false" />
+            <element signature="e#7843#7863#0" expanded="false" />
+            <element signature="e#8549#8574#0" expanded="false" />
+            <element signature="method#notifyValueChanged#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#notifyCellMoved#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getFor#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#set#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNext#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNext#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNextStandard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNextStandard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNextSwapped#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#get#1;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#continuePlaying#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#continuePlaying#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNonEmptyTiles#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNonEmptyTiles#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#setStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#setStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#prettyPrintBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#prettyPrintBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#undo#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#undo#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#canMove#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#canMove#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getEmptyTiles#0;class#NumberGame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2034">
+          <caret line="113" column="37" lean-forward="false" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="37" />
+          <folding>
+            <element signature="docComment;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#ANIMATING#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#PADDING#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#TRANSLATE_DURATION#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#SLIDE_TRANSITION#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#FADE_IN_DURATION#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#viewOverlay#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#rows#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#columns#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#GameTilePane#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#GameTilePane#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#changeBoardSize#0;class#GameTilePane#0" expanded="false" />
+            <element signature="e#4153#4154#0" expanded="true" />
+            <element signature="e#4181#4182#0" expanded="true" />
+            <element signature="docComment;method#placeCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#placeCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#replaceCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#replaceCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#moveCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#moveCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#moveAndMerge#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#moveAndMerge#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#createValueChangeAnim#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#createValueChangeAnim#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#getCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#getCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#createCellMoveAnimation#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#fadeInToFull#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#fadeInToFull#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#isAnimating#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#displayGameMessage#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#removeGameMessage#0;class#GameTilePane#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/GameView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3294">
+          <caret line="318" column="0" lean-forward="false" selection-start-line="318" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#status#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#rows#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#board#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#winningVal#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#NumberGame#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#NumberGame#1;class#NumberGame#0" expanded="false" />
+            <element signature="method#NumberGame#1;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#createInstance#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getAt#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getAt#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getRows#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getColumns#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#resizeBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#resizeBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#reset#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#reset#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#placeRandomValue#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#placeRandomValue#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#setValues#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#setValues#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getIndex#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getIndex#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#slide#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#slide#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#slide#1;class#NumberGame#0" expanded="false" />
+            <element signature="method#slide#1;class#NumberGame#0" expanded="false" />
+            <element signature="e#7843#7863#0" expanded="false" />
+            <element signature="e#8549#8574#0" expanded="false" />
+            <element signature="method#notifyValueChanged#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#notifyCellMoved#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getFor#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#set#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNext#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNext#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNextStandard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNextStandard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNextSwapped#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#get#1;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#continuePlaying#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#continuePlaying#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNonEmptyTiles#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNonEmptyTiles#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#setStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#setStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#prettyPrintBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#prettyPrintBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#undo#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#undo#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#canMove#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#canMove#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getEmptyTiles#0;class#NumberGame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#initialize#0;class#Game#0" expanded="false" />
+            <element signature="method#pause#0;class#Game#0" expanded="false" />
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#initialize#0;class#Game#0" expanded="false" />
+            <element signature="method#pause#0;class#Game#0" expanded="false" />
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/GameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#slider#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#context#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#view#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#toolbar#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#infoDisplay#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#winningValue#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#GameManager#0;class#GameManager#0" expanded="false" />
+            <element signature="method#setStartMenu#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#buildToolbar#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#getResizeInputStructure#0;class#GameManager#0" expanded="false" />
+            <element signature="method#getResizeInputStructure#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#bindKeys#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#undoState#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#onSlide#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#reset#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#onCellMoved#0;class#GameManager#0" expanded="false" />
+            <element signature="method#onCellMoved#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#onCellValueChanged#0;class#GameManager#0" expanded="false" />
+            <element signature="method#onCellValueChanged#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#onGameStatusChanged#0;class#GameManager#0" expanded="false" />
+            <element signature="method#onGameStatusChanged#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#onSlideComplete#0;class#GameManager#0" expanded="false" />
+            <element signature="method#onSlideComplete#0;class#GameManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/FxToolbar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="docComment;class#FxToolbar#0" expanded="false" />
+            <element signature="method#FxToolbar#0;class#FxToolbar#0" expanded="false" />
+            <element signature="method#addButton#0;class#FxToolbar#0" expanded="false" />
+            <element signature="method#loadImage#0;class#FxToolbar#0" expanded="false" />
+            <element signature="method#setDisabled#0;class#FxToolbar#0" expanded="false" />
+            <element signature="method#disableAll#0;class#FxToolbar#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#initialize#0;class#Game#0" expanded="false" />
+            <element signature="method#pause#0;class#Game#0" expanded="false" />
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#initialize#0;class#Game#0" expanded="false" />
+            <element signature="method#pause#0;class#Game#0" expanded="false" />
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/GameView.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1490264925569" expanded="true" signature="1316:1321" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#initialize#0;class#Game#0" expanded="false" />
+            <element signature="method#pause#0;class#Game#0" expanded="false" />
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/GameView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <marker date="1490264925569" expanded="true" signature="1316:1321" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/rt.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/ErrorHandle.java" />
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/InputUtil.java" />
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/GameStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/UndoStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1903#1904#0" expanded="false" />
+            <element signature="e#1928#1929#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/com/sun/javafx/event/CompositeEventDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/layout/GridPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="964" column="14" lean-forward="false" selection-start-line="964" selection-start-column="14" selection-end-line="964" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/interfaces/NumberSliderObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/interfaces/NumberSlider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/ScoreBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2577#2578#0" expanded="false" />
+            <element signature="e#2614#2615#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="docComment;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#status#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#rows#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#board#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#winningVal#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#NumberGame#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#NumberGame#1;class#NumberGame#0" expanded="false" />
+            <element signature="method#NumberGame#1;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#createInstance#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getAt#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getAt#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getRows#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getColumns#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#resizeBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#resizeBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#reset#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#reset#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#placeRandomValue#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#placeRandomValue#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#setValues#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#setValues#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getIndex#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getIndex#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#slide#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#slide#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#slide#1;class#NumberGame#0" expanded="false" />
+            <element signature="method#slide#1;class#NumberGame#0" expanded="false" />
+            <element signature="e#7843#7863#0" expanded="false" />
+            <element signature="e#8549#8574#0" expanded="false" />
+            <element signature="method#notifyValueChanged#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#notifyCellMoved#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getFor#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#set#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNext#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNext#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNextStandard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNextStandard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNextSwapped#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#get#1;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#continuePlaying#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#continuePlaying#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNonEmptyTiles#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNonEmptyTiles#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#setStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#setStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#prettyPrintBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#prettyPrintBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#undo#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#undo#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#canMove#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#canMove#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getEmptyTiles#0;class#NumberGame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/SlideDirection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/FxToolbar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;class#FxToolbar#0" expanded="false" />
+            <element signature="method#FxToolbar#0;class#FxToolbar#0" expanded="false" />
+            <element signature="method#addButton#0;class#FxToolbar#0" expanded="false" />
+            <element signature="method#loadImage#0;class#FxToolbar#0" expanded="false" />
+            <element signature="method#setDisabled#0;class#FxToolbar#0" expanded="false" />
+            <element signature="method#disableAll#0;class#FxToolbar#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/HUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/GameView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/GameToolbar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/GameAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/customtilepane.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/customtoolbar.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/GameView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="77" lean-forward="false" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+          <folding>
+            <marker date="1490264925569" expanded="true" signature="1316:1321" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="353" column="4" lean-forward="false" selection-start-line="353" selection-start-column="4" selection-end-line="353" selection-end-column="4" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#initialize#0;class#Game#0" expanded="false" />
+            <element signature="method#pause#0;class#Game#0" expanded="false" />
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+          <folding>
+            <element signature="docComment;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#ANIMATING#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#PADDING#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#TRANSLATE_DURATION#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#SLIDE_TRANSITION#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#FADE_IN_DURATION#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#viewOverlay#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#rows#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;field#columns#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#GameTilePane#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#GameTilePane#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#changeBoardSize#0;class#GameTilePane#0" expanded="false" />
+            <element signature="e#4153#4154#0" expanded="true" />
+            <element signature="e#4181#4182#0" expanded="true" />
+            <element signature="docComment;method#placeCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#placeCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#replaceCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#replaceCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#moveCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#moveCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#moveAndMerge#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#moveAndMerge#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#createValueChangeAnim#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#createValueChangeAnim#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#getCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#getCell#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#createCellMoveAnimation#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#fadeInToFull#0;class#GameTilePane#0" expanded="false" />
+            <element signature="method#fadeInToFull#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#isAnimating#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#displayGameMessage#0;class#GameTilePane#0" expanded="false" />
+            <element signature="docComment;method#removeGameMessage#0;class#GameTilePane#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter/src/edu/gvsu/preston/GameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+          <folding>
+            <element signature="docComment;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#slider#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#context#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#view#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#toolbar#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#infoDisplay#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;field#winningValue#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#GameManager#0;class#GameManager#0" expanded="false" />
+            <element signature="method#setStartMenu#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#buildToolbar#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#getResizeInputStructure#0;class#GameManager#0" expanded="false" />
+            <element signature="method#getResizeInputStructure#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#bindKeys#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#undoState#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#onSlide#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#reset#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#onCellMoved#0;class#GameManager#0" expanded="false" />
+            <element signature="method#onCellMoved#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#onCellValueChanged#0;class#GameManager#0" expanded="false" />
+            <element signature="method#onCellValueChanged#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#onGameStatusChanged#0;class#GameManager#0" expanded="false" />
+            <element signature="method#onGameStatusChanged#0;class#GameManager#0" expanded="false" />
+            <element signature="docComment;method#onSlideComplete#0;class#GameManager#0" expanded="false" />
+            <element signature="method#onSlideComplete#0;class#GameManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JavaFXApp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27668658" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27668658" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>view</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27668658" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27668658" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

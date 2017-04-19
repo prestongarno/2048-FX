@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import edu.gvsu.prestongarno.gui.FxToolbar?>
+<?import edu.gvsu.prestongarno.gui.GameTilePane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Pane?>
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.gvsu.prestongarno.gui.Game">
+    <top>
+        <FxToolbar fx:id="actionMenu" prefHeight="40.0" prefWidth="400.0">
+         <effect>
+             <DropShadow blurType="TWO_PASS_BOX" height="77.93" offsetX="10.0"
+                         radius="30.3075" spread="0.1" width="45.3" />
+         </effect></FxToolbar>
+    </top>
+    <center>
+        <StackPane fx:id="stackPane" prefHeight="400.0" prefWidth="400.0" >
+            <Pane fx:id="overlay" BorderPane.alignment="CENTER"/>
+            <GameTilePane fx:id="gameBoard" />
+        </StackPane>
+   </center>
+    <left>
+        <FlowPane fx:id="statsPane" maxWidth="300.0">
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="43.78" offsetY="10.0"
+                        radius="21.77" spread="0.1" width="45.3" />
+         </effect></FlowPane>
+    </left>
+</BorderPane>
