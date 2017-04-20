@@ -33,6 +33,7 @@ public class FxToolbar extends ToolBar implements GameToolbar{
 		}
 		this.setFocusTraversable(false);
 		this.setBackground(new Background(new BackgroundFill(Game.getGame().getGameThemeColor(), null, null)));
+		this.toFront();
 	}
 	
 	@Override

@@ -18,7 +18,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("fxml/GameView.fxml"));
-		primaryStage.setTitle("2048fX");
+		primaryStage.setTitle("2048-FX");
 		primaryStage.setScene(new Scene(root, 1100,800));
 		primaryStage.show();
 		new GameManager(Game.getContext(), 4, 4);

@@ -57,7 +57,7 @@ public interface GameView {
 	 * Used because of the way the animations work,
 	 * some cleanup has to happen on the overlay used to mimic a slide animation
 	 ****************************************/
-	void onSlideComplete();
+	void update();
 	
 	/*****************************************
 	 * removes the overlay message from the game

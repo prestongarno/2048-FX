@@ -61,14 +61,7 @@ public interface NumberSlider {
 	* @return true when the board changes
 	****************************************/
   boolean slide(SlideDirection dir);
-  
-	/*****************************************
-	*
-	* @return an arraylist of Cells. Each cell holds the (row,column) and
-	* value of a tile
-	****************************************/
-  ArrayList<Cell> getNonEmptyTiles();
-  
+
 	/*****************************************
 	* Return the current state of the game
 	* @return one of the possible values of GameStatus enum
@@ -85,4 +78,10 @@ public interface NumberSlider {
 	* @throws IllegalStateException when undo is not possible
 	****************************************/
   void undo();
+
+  int getAt(int x, int y);
+
+  int rows();
+
+  int columns();
 }

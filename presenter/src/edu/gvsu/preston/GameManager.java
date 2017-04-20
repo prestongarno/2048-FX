@@ -9,30 +9,39 @@ import edu.gvsu.preston.interfaces.*;
 import java.util.EnumSet;
 import java.util.HashMap;
 
-import static edu.gvsu.cis163.project3.GameStatus.*;
-import static edu.gvsu.cis163.project3.SlideDirection.*;
-
 
 /**
  * *************************************************
  * 2048 - edu.gvsu.prestongarno
  ****************************************/
 public class GameManager implements NumberSliderObserver {
-	
-	
-	/** * the model */
+
+
+	/**
+	 * the model
+	 */
 	private final NumberSlider slider;
-	/** * the context of the game */
-	private final Context context;
-	/** *  the game board */
-	private GameView view;
-	/** * the game toolbar instance */
-	private GameToolbar toolbar;
-	/** * The info display instance */
-	private HUD infoDisplay;
-	/** * the winning value */
-	private int winningValue;
-	
+	/**
+	 * the context of the game
+	 */
+	private final Context      context;
+	/**
+	 * the game board
+	 */
+	private       GameView     view;
+	/**
+	 * the game toolbar instance
+	 */
+	private       GameToolbar  toolbar;
+	/**
+	 * The info display instance
+	 */
+	private       HUD          infoDisplay;
+	/**
+	 * the winning value
+	 */
+	private       int          winningValue;
+
 	/*****************************************
 	 * Constructor for the game presenter class
 	 * @param context the context of the GUI application
@@ -51,27 +60,26 @@ public class GameManager implements NumberSliderObserver {
 		this.setStartMenu();
 		this.bindKeys();
 	}
-	
+
 	private void setStartMenu() {
-		
+
 		HashMap<String, Runnable> message = new HashMap<>(1);
+
 		message.put("Start Game", () -> {
 			context.resume();
-			for (Cell c : slider.getNonEmptyTiles()) {
-				view.placeCell(c.row, c.column, c.value);
-			}
 			infoDisplay.displayScore("" + ((NumberGame) slider).getScore());
+			placeAll();
 		});
-		
-		view.displayGameMessage("2048FX", message);
-		
+
+		view.displayGameMessage("2048-FX", message);
+
 	}
-	
+
 	/*****************************************
 	 * @param toolbar the toolbar to dosplay actions to
 	 ****************************************/
 	private void buildToolbar(GameToolbar toolbar) {
-		
+
 		toolbar.addButton("pause.png", "pause_btn", () -> {
 			if (context.isPaused()) {
 				context.resume();
@@ -80,15 +88,16 @@ public class GameManager implements NumberSliderObserver {
 				toolbar.setDisabled("pause_btn", false);
 			}
 		});
-		
+
 		toolbar.addButton("undo.png", "undo_button", () -> context.confirmDialog(
 				"Undo",
 				"Undo last move.",
 				"Are you sure?", confirmed -> {
-				if (confirmed) this.undoState();}));
-		
+					if (confirmed) this.undoState();
+				}));
+
 		toolbar.addButton("Restart Game", "restart_game", this::reset);
-		
+
 		toolbar.addButton("Resize Board", "resize_board", () -> context.getUserInput(
 				"Resize Board",
 				"Resize Board",
@@ -97,18 +106,14 @@ public class GameManager implements NumberSliderObserver {
 				results -> {
 					try {
 						int rows = Integer.valueOf(results.get("NUM_ROWS"));
-						int col = Integer.valueOf(results.get("NUM_COLUMNS"));
+						int col  = Integer.valueOf(results.get("NUM_COLUMNS"));
 						slider.resizeBoard(rows, col, this.winningValue);
 						view.changeBoardSize(rows, col);
-						view.clear();
-						slider.getNonEmptyTiles().forEach(cell -> {
-							view.placeCell(cell.row, cell.column, cell.value);
-						});
 					} catch (NumberFormatException nf) {
 						context.showError("Invalid input", "Input must be a number!");
 					}
 				}));
-		
+
 		toolbar.addButton(
 				"Win conditions",
 				"win_conditions",
@@ -116,53 +121,63 @@ public class GameManager implements NumberSliderObserver {
 					final HashMap<String, String> values = new HashMap<>();
 					values.put("WIN_VALUE", "Winning value: ");
 					context.getUserInput("Settings", "Change Settings", "Game rules", values, results -> {
-								try {
-									final Integer newValue = Integer.valueOf(results.get("WIN_VALUE"));
-									if (newValue < 0) throw new IllegalArgumentException();
-									slider.resizeBoard(((NumberGame) slider).getRows(),
-											((NumberGame) slider).getColumns(),
-											newValue);
-									infoDisplay.setWinningValue("" + newValue);
-								} catch (NumberFormatException nf) {
-									context.showError("Invalid", "Invalid Input! Must be a number.");
-								} catch (IllegalArgumentException ig) {
-									context.showError("Invalid", "Number must be a positive multiple of 2!");
-								}
-							});
+						try {
+							final Integer newValue = Integer.valueOf(results.get("WIN_VALUE"));
+							if (newValue < 0) throw new IllegalArgumentException();
+							slider.resizeBoard(((NumberGame) slider).getRows(),
+													 ((NumberGame) slider).getColumns(),
+													 newValue);
+							infoDisplay.setWinningValue("" + newValue);
+						} catch (NumberFormatException nf) {
+							context.showError("Invalid", "Invalid Input! Must be a number.");
+						} catch (IllegalArgumentException ig) {
+							context.showError("Invalid", "Number must be a positive multiple of 2!");
+						}
+					});
 				});
 	}
-	
+
 	/*****************************************
 	 * Getter for property 'resizeInputStructure'.
 	 *
 	 * @return Value for property 'resizeInputStructure'.
 	 ****************************************/
 	private HashMap<String, String> getResizeInputStructure() {
-		
+
 		HashMap<String, String> map = new HashMap<>();
 		map.put("NUM_ROWS", "Rows:");
 		map.put("NUM_COLUMNS", "Columns:");
 		return map;
 	}
-	
+
 	/*****************************************
 	 * bind keys to perform game actions
 	 ****************************************/
 	private void bindKeys() {
 		context.bindKey(keycode -> {
 			if (!view.isAnimating() && !context.isPaused()) {
-			for (SlideDirection sd : EnumSet.allOf(SlideDirection.class)) {
-				if (sd.toString().compareToIgnoreCase(keycode) == 0) {
-					this.onSlide(sd);
+				for (SlideDirection sd : EnumSet.allOf(SlideDirection.class)) {
+					if (sd.toString().compareToIgnoreCase(keycode) == 0) {
+						this.onSlide(sd);
+					}
 				}
-			}}
+			}
 		}, "UP", "DOWN", "LEFT", "RIGHT");
-		
+
 		context.bindKey(KeyCode -> context.pause(), "P");
-		
+
 		context.bindKey(KeyCode -> undoState(), "U");
 	}
-	
+
+	private void placeAll() {
+		for (int r = 0; r < slider.rows(); r++) {
+			for (int c = 0; c < slider.columns(); c++) {
+				int at = slider.getAt(r, c);
+				if(at >0) view.placeCell(r, c, at);
+			}
+		}
+	}
+
 	/*****************************************
 	 * Undo game state and update GUI
 	 ****************************************/
@@ -171,92 +186,97 @@ public class GameManager implements NumberSliderObserver {
 			slider.undo();
 			view.clear();
 			infoDisplay.decrementMoveCount();
-			for (Cell cell : slider.getNonEmptyTiles()) {
-				view.placeCell(cell.row, cell.column, cell.value);
-			}
 			infoDisplay.displayScore("" + ((NumberGame) slider).getScore());
+			placeAll();
 		} catch (IllegalStateException is) {
 			this.context.showError("Illegal move", "Already at last change!");
 		}
 	}
-	
+
 	/*****************************************
 	 * @param direction the direction to slide
 	 ****************************************/
 	private void onSlide(SlideDirection direction) {
-		if(slider.slide(direction)) infoDisplay.incrementMoveCount();
+		if (slider.slide(direction)) infoDisplay.incrementMoveCount();
 	}
-	
+
 	/*****************************************
 	 * Reset the game
 	 ****************************************/
 	protected void reset() {
 		context.confirmDialog("Reset Game",
-				"Warning! You will lose all game progress!",
-				"Reset game?",
-				confirmed -> {
-					if (confirmed) {
-						view.removeGameMessage();
-						slider.reset();
-						toolbar.disableAll(false);
-						infoDisplay.resetMoveCount();
-						view.clear();
-						for (Cell cell : slider.getNonEmptyTiles()) {
-							view.placeCell(cell.row, cell.column, cell.value);
-						}
-						infoDisplay.displayScore("" + ((NumberGame) slider).getScore());
-					} });
+									 "Warning! You will lose all game progress!",
+									 "Reset game?",
+									 confirmed -> {
+										 if (confirmed) {
+											 view.removeGameMessage();
+											 slider.reset();
+											 toolbar.disableAll(false);
+											 infoDisplay.resetMoveCount();
+											 view.clear();
+											 infoDisplay.displayScore("" + ((NumberGame) slider).getScore());
+											 placeAll();
+										 }
+									 });
 	}
-	
-	/** {@inheritDoc} */
+
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
-	public void onCellMoved(int oldRow,
-									int oldColumn,
-									int currentRow,
-									int currentColumn) {
+	public void onCellMoved(
+			int oldRow,
+			int oldColumn,
+			int currentRow,
+			int currentColumn) {
 		view.moveCell(oldRow, oldColumn, currentRow, currentColumn);
 	}
-	
-	/** {@inheritDoc} */
+
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
-	public void onCellValueChanged(int fromRow,
-											 int fromColumn,
-											 int toRow,
-											 int toColumn,
-											 int newValue) {
+	public void onCellValueChanged(
+			int fromRow,
+			int fromColumn,
+			int toRow,
+			int toColumn,
+			int newValue) {
 		view.moveAndMerge(fromRow, fromColumn, toRow, toColumn, newValue);
 	}
-	
-	/** {@inheritDoc} */
+
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public void onGameStatusChanged(GameStatus status) {
 		HashMap<String, Runnable> options = new HashMap<>(1);
 		switch (status) {
-		case USER_WON:
-			toolbar.disableAll(true);
-			
-			options.put("Continue playing", () -> {
-				((NumberGame) slider).continuePlaying(2);
-				context.resume();
-			});
-			options.put("Restart", this::reset);
-			
-			view.displayGameMessage("Congratulations, you've won!\nIt took you "
-					+ infoDisplay.getMoveCount()
-					+ " moves\nto get a score of\n"
-					+ ( ((NumberGame) slider).getScore() -4 ), options);
-			break;
-			
-		case USER_LOST:
-			toolbar.disableAll(true);
-			options.put("Restart", this::reset);
-			view.displayGameMessage("Game Over\nIt took you "
-					+ infoDisplay.getMoveCount()
-					+ " moves\nto get a score of\n"
-					+ ( ((NumberGame) slider).getScore() -4 ), options);
+			case USER_WON:
+				toolbar.disableAll(true);
+
+				options.put("Continue playing", () -> {
+					((NumberGame) slider).continuePlaying(2);
+					context.resume();
+				});
+				options.put("Restart", this::reset);
+
+				view.displayGameMessage("Congratulations, you've won!\nIt took you "
+														+ infoDisplay.getMoveCount()
+														+ " moves\nto get a score of\n"
+														+ (((NumberGame) slider).getScore() - 4), options);
+				break;
+
+			case USER_LOST:
+				toolbar.disableAll(true);
+				options.put("Restart", this::reset);
+				view.displayGameMessage("Game Over\nIt took you "
+														+ infoDisplay.getMoveCount()
+														+ " moves\nto get a score of\n"
+														+ (((NumberGame) slider).getScore() - 4), options);
 		}
 	}
-	
+
 	/*****************************************
 	 * Notified when the slide action is complete
 	 ****************************************/
@@ -264,7 +284,12 @@ public class GameManager implements NumberSliderObserver {
 	public void onSlideComplete() {
 		infoDisplay.displayScore("" + ((NumberGame) slider).getScore());
 		Cell nextCell = slider.placeRandomValue();
-		view.placeCell(nextCell.row, nextCell.column, nextCell.value);
-		view.onSlideComplete();
+		if (nextCell == null) {
+			onGameStatusChanged(GameStatus.USER_LOST);
+		} else {
+			view.placeCell(nextCell.row, nextCell.column, nextCell.value);
+			view.update();
+		}
+		System.out.println(((NumberGame) slider).prettyPrintBoard());
 	}
 }

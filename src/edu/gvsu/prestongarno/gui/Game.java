@@ -6,6 +6,7 @@ import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
+import javafx.scene.Group;
 import javafx.scene.control.*;
 import javafx.scene.input.InputEvent;
 import javafx.scene.input.KeyEvent;
@@ -30,10 +31,13 @@ public class Game implements Context {
 	@FXML
 	private Pane overlay;
 	@FXML
+	private
 	GameTilePane gameBoard;
 	@FXML
+	private
 	FxToolbar actionMenu;
 	@FXML
+	private
 	FlowPane statsPane;
 	@FXML
 	public BorderPane borderPane;
@@ -44,14 +48,14 @@ public class Game implements Context {
 	private static Game game;
 	private Color currentColor;
 	private javafx.scene.text.Font gameFont;
-	
+
 	/*****************************************
 	 * bind view
 	 ****************************************/
 	public Game() {
 		game = this;
 		context = this;
-		this.currentColor = new Color(.32, .32, .32, 1.0);
+		this.currentColor = new Color(0.0, 0.4, 0.40, 1.0);
 		this.gameFont = new Font("Ubuntu", 16);
 	}
 	
@@ -72,6 +76,7 @@ public class Game implements Context {
 			}
 		};
 		borderPane.addEventHandler(KeyEvent.KEY_RELEASED, handler);
+		this.stackPane.setSnapToPixel(false);
 	}
 	
 	/*****************************************
