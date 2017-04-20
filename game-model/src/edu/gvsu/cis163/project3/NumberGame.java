@@ -5,7 +5,6 @@ import edu.gvsu.cis163.project3.interfaces.NumberSlider;
 import edu.gvsu.cis163.project3.interfaces.NumberSliderObserver;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static edu.gvsu.cis163.project3.GameStatus.*;
 import static java.util.concurrent.ThreadLocalRandom.current;
@@ -63,8 +62,8 @@ public class NumberGame implements NumberSlider {
 		board = new int[rows][columns];
 		this.score = 0;
 		this.winningVal = 1024;
-		colTracker = new boolean[board.length];
 		rowTracker = new boolean[board[0].length];
+		colTracker = new boolean[board.length];
 		placeRandomValue();
 		placeRandomValue();
 	}
@@ -131,9 +130,8 @@ public class NumberGame implements NumberSlider {
 		for (int i = 2; i <= winningValue; i *= 2) {
 			ii = i;
 		}
-		if (ii != winningValue) throw new IllegalArgumentException();
+		if (ii != winningValue | width < 2 | height < 2) throw new IllegalArgumentException();
 
-		ArrayList<Cell> cells = this.getNonEmptyTiles();
 		this.setStatus(IN_PROGRESS);
 		this.winningVal = winningValue;
 		this.rows = width;
@@ -142,14 +140,26 @@ public class NumberGame implements NumberSlider {
 		colTracker = new boolean[board.length];
 		rowTracker = new boolean[board[0].length];
 
-		cells.stream()
-				.filter(cell -> cell.row < rows && cell.column < columns)
-				.forEach(cell -> {
-					board[cell.row][cell.column] = cell.value;
-				});
+		int[][] prev = UndoStack.getInstance().peek();
+
+		for (int r = 0; r < width; r++) {
+			for (int c = 0; c < height; c++) {
+				if(r < width && c < height) {
+					board[r][c] = prev[r][c];
+				}
+			}
+		}
 		if (this.score == 0) {
 			this.placeRandomValue();
+			this.placeRandomValue();
 		}
+	}
+
+	/**
+	 * Test method only -- Do not touch
+	 */
+	public void setAt(int r, int c, int v) {
+		this.board[r][c] = v;
 	}
 
 	/*****************************************
@@ -160,29 +170,32 @@ public class NumberGame implements NumberSlider {
 		this.board = new int[rows][columns];
 		this.status = IN_PROGRESS;
 		UndoStack.getInstance().clearStack();
+		this.score = 0;
 		placeRandomValue();
 		placeRandomValue();
 	}
 
 	//test recursion
 	@SuppressWarnings("Duplicates")
-	private static int getRandomRow(int lo, int hi, boolean[] flagged) {
+	private static int getTrueRand(int lo, int hi, boolean[] flagged) {
+		System.out.println("lo" +lo+ ", hi"+hi);
 		int rand;
-		if (lo >= hi && hi == flagged.length-1) {return hi;}
+
 		if (hi == lo) {
 			rand = lo;
 			hi = flagged.length+1;
 			lo = lo + 1;
 		} else rand = current().nextInt(lo, hi);
 
+		if (lo > hi) {return hi-1;}
+
 		if (!flagged[rand]) return rand;
 		flagged[rand] = true;
-		return getRandomRow(lo, hi - 1, flagged);
+		return getTrueRand(lo, hi - 1, flagged);
 	}
 
 	private static int getRandomColumn(int lo, int hi, boolean[] flagged) {
-		int rand;
-
+/*		int rand;
 		if (lo >= hi && hi == flagged.length-1) {return hi;}
 		if (hi == lo) {
 			rand = lo;
@@ -191,8 +204,7 @@ public class NumberGame implements NumberSlider {
 		} else rand = current().nextInt(lo, hi);
 
 		if (!flagged[rand]) return rand;
-
-		flagged[rand] = true;
+		flagged[rand] = true;*/
 		return getRandomColumn(lo, hi - 1, flagged);
 	}
 
@@ -203,62 +215,69 @@ public class NumberGame implements NumberSlider {
 	@Nullable
 	@Override
 	public Cell placeRandomValue() {
+		// counts the cells as it goes
 		boolean transpose = current().nextBoolean();
+		System.out.println("transpose=" +transpose);
 		// either searching on a row or a column first based off of a binary rand selection
-		boolean[] scanner = !transpose ? rowTracker : colTracker;
+		boolean[] scanner = transpose ? colTracker : rowTracker;
 
-		// tracks which index (line) we're at
-		boolean[] altScanner = (transpose) ? rowTracker : colTracker;
-
-		int value; // value at index holder
 		// main search loop
 		for (int i = 0; i < scanner.length; i++) {
+			System.out.println("CountShift=" + i);
 			// loop:: while tracker at index hasn't been flagged get next rand integer
 			int randIndex;
-			randIndex = transpose ?
-							getRandomColumn(0, scanner.length-1, scanner) :
-							getRandomRow(0, scanner.length-1, scanner);
+			System.out.println("scan=" + scanner.length);
+			randIndex = getTrueRand(0, scanner.length, scanner);
 			// flag this index on the 2d array as visited
 			scanner[randIndex] = true;
 
 			//===== > actual value part
 
-			int max = altScanner.length - 1;
+			int max = transpose? rowTracker.length : colTracker.length;
 			// get an index in the row/column we're on
 			int randIndexIndex = nextInt(max);
 			// flag this indexIndex as visited
 
 			int     curr;
-			boolean increment = randIndexIndex != max;
-			int     hi;
-			int     lo;
-			hi = lo = randIndexIndex;
+			boolean increment = randIndexIndex <max-1;
+			int     hi = randIndexIndex + 1;
+			int     lo = randIndexIndex - 1;
 
-			for (boolean b : altScanner) {
+			for (int a = 0; a < max; a++) {
 				// if the spot on the board is empty, set and return, else flag visited and incr/decr
+				//System.out.println(">>> " + randIndex + "," + randIndexIndex);
 				curr = (transpose ? board[randIndex][randIndexIndex] : board[randIndexIndex][randIndex]);
 
-				if (curr == 0 && transpose) {   // standard
-					board[randIndex][randIndexIndex] = (current().nextInt(2, 6) == 5) ? 4 : 2;
+				if (curr == 0)  {   // standard
 					this.resetScanners();
-					return new Cell(randIndex, randIndexIndex, board[randIndex][randIndexIndex]);
-				} else if (curr == 0) {
-					board[randIndexIndex][randIndex] = (current().nextInt(2, 6) == 5) ? 4 : 2;
-					this.resetScanners();
-					return new Cell(randIndexIndex, randIndex, board[randIndexIndex][randIndex]);
+					int row = transpose? randIndex : randIndexIndex;
+					int col = transpose? randIndexIndex : randIndex;
+					int set = (current().nextInt(2, 6) == 5) ? 4 : 2;
+					this.board[row][col] = set;
+					Cell cell = new Cell(row, col, set);
+					score += cell.value;
+					return cell;
 				}
 
 				// expand outward
-				if (increment && hi < max) {
-					randIndexIndex = hi = hi + 1;
-				} else if (!increment && lo > 0) {
-					randIndexIndex = lo = lo - 1;
+				if (increment && hi++ < max-1) {
+					randIndexIndex = hi;
+				} else if (!increment && lo-- > 0) {
+					randIndexIndex = lo;
 				}
 				increment = !increment;
 			}
 		}
-		this.status = USER_LOST;
-		return null;
+		for (int r = 0; r < board.length; r++) {
+			for (int c = 0; c < board[0].length; c++) {
+				if(board[r][c] == 0) {
+					int set = (current().nextInt(2, 6) == 5) ? 4 : 2;
+					this.board[r][c] = set;
+					return new Cell(r,c,set);
+				}
+			}
+		}
+		throw new IllegalStateException();
 	}
 
 private void resetScanners() {
@@ -328,6 +347,10 @@ private void resetScanners() {
 		throw new IllegalStateException();
 	}
 
+	public void saveState() {
+		UndoStack.getInstance().notifyMoved(this);
+	}
+
 	/*****************************************
 	 * Shift values on the board.  1 slide method, 4 lines of direction logic
 	 * @param board the game board
@@ -382,7 +405,6 @@ private void resetScanners() {
 						// notify observers
 						Cell fromCell = getFor(line, next, swap, get(line, next, swap));
 						Cell toCell   = getFor(line, pivot, swap, get(line, pivot, swap));
-						this.score = score + toCell.value * toCell.value;
 						this.notifyValueChanged(fromCell, toCell);
 
 					} else { // else increment the pivot and set the value
@@ -395,7 +417,6 @@ private void resetScanners() {
 							canMerge = true;
 							// notify observers
 							final int val = get(line, pivot, swap);
-							score = score + (val * val);
 							this.notifyCellMoved(swap, line, next, line, pivot);
 						}
 
@@ -527,24 +548,6 @@ private void resetScanners() {
 
 	public int getWinningValue() {
 		return this.winningVal;
-	}
-
-	/*****************************************
-	 * @return an arraylist of Cells. Each cell holds the (row,column) and
-	 * value of a tile
-	 ****************************************/
-	public ArrayList<Cell> getNonEmptyTiles() {
-		return (ArrayList<Cell>) Arrays.stream(board)
-				.flatMap(ints -> {
-					List<Cell> cellsInRow = new LinkedList<>();
-					int        row        = this.getIndex(this.board, ints);
-					for (int i = 0; i < ints.length; i++) {
-						if (ints[i] > 0) {
-							cellsInRow.add(new Cell(row, i, ints[i]));
-						}
-					}
-					return cellsInRow.stream();
-				}).collect(Collectors.toList());
 	}
 
 	/*****************************************

@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Tests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-model/game-model.iml" afterPath="$PROJECT_DIR$/game-model/game-model.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java" afterPath="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/interfaces/NumberSlider.java" afterPath="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/interfaces/NumberSlider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/GameManager.java" afterPath="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/GameManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/GameView.java" afterPath="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/interfaces/GameView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Tests.java" afterPath="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Tests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/UndoStack.java" afterPath="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/UndoStack.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/FxToolbar.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/FxToolbar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Game.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Main.java" afterPath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/GameView.fxml" afterPath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/GameView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/customtoolbar.fxml" afterPath="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/customtoolbar.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,57 +64,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameTilePane.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="86" column="16" lean-forward="false" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-              <folding>
-                <element signature="docComment;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;field#PADDING#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;field#FADE_IN_DURATION#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;field#viewOverlay#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;field#rows#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;field#columns#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;method#GameTilePane#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;method#initialize#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;method#changeBoardSize#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;method#clear#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;method#placeCell#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;method#getCell#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;method#update#0;class#GameTilePane#0" expanded="false" />
-                <element signature="method#isAnimating#0;class#GameTilePane#0" expanded="false" />
-                <element signature="docComment;method#displayGameMessage#0;class#GameTilePane#0" expanded="false" />
-                <element signature="method#displayGameMessage#0;class#GameTilePane#0" expanded="false" />
-                <element signature="e#10523#12275#0" expanded="false" />
-                <element signature="docComment;method#removeGameMessage#0;class#GameTilePane#0" expanded="false" />
-                <element signature="method#removeGameMessage#0;class#GameTilePane#0" expanded="false" />
-                <element signature="e#12649#12733#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CellView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
-              <folding>
-                <element signature="docComment;class#CellView#0" expanded="false" />
-                <element signature="docComment;field#TRANSLATE_DURATION#0;class#CellView#0" expanded="false" />
-                <element signature="docComment;field#SCALE_DURATION#0;class#CellView#0" expanded="false" />
-                <element signature="docComment;field#fade#0;class#CellView#0" expanded="false" />
-                <element signature="docComment;method#CellView#0;class#CellView#0" expanded="false" />
-                <element signature="method#isAnimating#0;class#CellView#0" expanded="false" />
-                <element signature="docComment;method#getFill#0;class#CellView#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -182,14 +120,14 @@
         <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/FxToolbar.java" />
         <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/Game.java" />
         <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Cell.java" />
-        <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/UndoStack.java" />
         <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/interfaces/NumberSlider.java" />
         <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/fxml/GameView.fxml" />
+        <option value="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/GameManager.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java" />
+        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java" />
+        <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/UndoStack.java" />
         <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java" />
         <option value="$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Tests.java" />
-        <option value="$PROJECT_DIR$/presenter/src/edu/gvsu/preston/GameManager.java" />
-        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java" />
-        <option value="$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java" />
       </list>
     </option>
   </component>
@@ -419,20 +357,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="presenter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="edu.gvsu.preston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2048-FX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="game-model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
@@ -448,24 +372,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="edu.gvsu.cis163.project3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2048-FX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="edu.gvsu.cis163.project3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -518,7 +424,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.No GPU">
+  <component name="RunManager" selected="JUnit.Tests.testImpossibleGame">
     <configuration default="false" name="Force GPU" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -579,6 +485,32 @@
       <option name="MAIN_CLASS_NAME" value="edu.gvsu.cis163.project3.Tests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tests.testImpossibleGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.gvsu.cis163.project3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="game-model" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.gvsu.cis163.project3" />
+      <option name="MAIN_CLASS_NAME" value="edu.gvsu.cis163.project3.Tests" />
+      <option name="METHOD_NAME" value="testImpossibleGame" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -994,17 +926,19 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.No GPU" />
       <item index="1" class="java.lang.String" itemvalue="Application.Force GPU" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.Tests.testPlaceValue" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.Tests" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Tests.testImpossibleGame" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.Force GPU" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Tests.testImpossibleGame" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.Tests.testPlaceValue" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Tests" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Force GPU" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Tests" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1041,52 +975,52 @@
       <workItem from="1492625787071" duration="16108000" />
       <workItem from="1492641916557" duration="10040000" />
       <workItem from="1492654694554" duration="6586000" />
-      <workItem from="1492678062063" duration="6000" />
+      <workItem from="1492678062063" duration="9097000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_testPlaceValue - 2017.04.19 at 21h 56m 57s.xml">
-      <configuration name="Tests.testPlaceValue" configurationId="JUnit" />
+    <history-entry file="Tests_testImpossibleGame - 2017.04.20 at 07h 12m 01s.xml">
+      <configuration name="Tests.testImpossibleGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testPlaceValue - 2017.04.19 at 21h 57m 29s.xml">
-      <configuration name="Tests.testPlaceValue" configurationId="JUnit" />
+    <history-entry file="Tests_testImpossibleGame - 2017.04.20 at 07h 12m 20s.xml">
+      <configuration name="Tests.testImpossibleGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testPlaceValue - 2017.04.19 at 21h 57m 39s.xml">
-      <configuration name="Tests.testPlaceValue" configurationId="JUnit" />
+    <history-entry file="Tests_testImpossibleGame - 2017.04.20 at 07h 12m 30s.xml">
+      <configuration name="Tests.testImpossibleGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testPlaceValue - 2017.04.19 at 21h 59m 04s.xml">
-      <configuration name="Tests.testPlaceValue" configurationId="JUnit" />
+    <history-entry file="Tests_testImpossibleGame - 2017.04.20 at 07h 14m 04s.xml">
+      <configuration name="Tests.testImpossibleGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testPlaceValue - 2017.04.19 at 21h 59m 30s.xml">
-      <configuration name="Tests.testPlaceValue" configurationId="JUnit" />
+    <history-entry file="Tests_testImpossibleGame - 2017.04.20 at 07h 14m 18s.xml">
+      <configuration name="Tests.testImpossibleGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testPlaceValue - 2017.04.19 at 21h 59m 49s.xml">
-      <configuration name="Tests.testPlaceValue" configurationId="JUnit" />
+    <history-entry file="Tests_testImpossibleGame - 2017.04.20 at 07h 14m 53s.xml">
+      <configuration name="Tests.testImpossibleGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testPlaceValue - 2017.04.19 at 22h 00m 43s.xml">
-      <configuration name="Tests.testPlaceValue" configurationId="JUnit" />
+    <history-entry file="Tests_testImpossibleGame - 2017.04.20 at 07h 15m 55s.xml">
+      <configuration name="Tests.testImpossibleGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testPlaceValue - 2017.04.19 at 22h 02m 51s.xml">
-      <configuration name="Tests.testPlaceValue" configurationId="JUnit" />
+    <history-entry file="Tests_testImpossibleGame - 2017.04.20 at 07h 15m 57s.xml">
+      <configuration name="Tests.testImpossibleGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testPlaceValue - 2017.04.19 at 22h 03m 47s.xml">
-      <configuration name="Tests.testPlaceValue" configurationId="JUnit" />
+    <history-entry file="Tests_testImpossibleGame - 2017.04.20 at 07h 18m 57s.xml">
+      <configuration name="Tests.testImpossibleGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testPlaceValue - 2017.04.19 at 22h 04m 05s.xml">
-      <configuration name="Tests.testPlaceValue" configurationId="JUnit" />
+    <history-entry file="Tests_testImpossibleGame - 2017.04.20 at 07h 19m 10s.xml">
+      <configuration name="Tests.testImpossibleGame" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178876000" />
+    <option name="totallyTimeSpent" value="187967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1915" y="-25" width="1930" height="1110" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935324" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1105,7 +1039,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.37756202" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="669" y="36" width="1226" height="1044" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.37756202" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="664" y="36" width="1226" height="1044" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1115,7 +1049,6 @@
       <window_info id="Memory View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935324" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="2020" y="71" width="1343" height="909" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1134,36 +1067,36 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java</url>
-          <line>603</line>
+          <line>606</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java</url>
-          <line>525</line>
+          <line>546</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/UndoStack.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java</url>
-          <line>416</line>
+          <line>595</line>
           <properties />
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Tests.java</url>
-          <line>15</line>
+          <url>file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java</url>
+          <line>229</line>
           <properties />
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java</url>
-          <line>93</line>
-          <properties />
-          <option name="timeStamp" value="67" />
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="68" />
+      <option name="time" value="72" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1180,6 +1113,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1194,6 +1137,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding>
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,6 +1154,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1222,6 +1178,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1236,6 +1202,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1243,6 +1219,9 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1492652360111" expanded="true" signature="1147:1152" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
@@ -1267,6 +1246,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1274,6 +1263,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <marker date="1492652360111" expanded="true" signature="1147:1152" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1380,13 +1372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/ScoreBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/util/Duration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5745">
@@ -1398,6 +1383,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1062">
           <caret line="79" column="3" lean-forward="false" selection-start-line="79" selection-start-column="3" selection-end-line="79" selection-end-column="3" />
+          <folding>
+            <element signature="method#resume#0;class#Game#0" expanded="false" />
+            <element signature="method#bindKey#0;class#Game#0" expanded="false" />
+            <element signature="method#confirmDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showInformation#0;class#Game#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#Game#0" expanded="false" />
+            <element signature="method#CustomTextInputDialog#0;class#CustomTextInputDialog#0;class#Game#0" expanded="false" />
+            <element signature="method#showWarning#0;class#Game#0" expanded="false" />
+            <element signature="method#showError#0;class#Game#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1426,27 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/UndoStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="58" column="18" lean-forward="false" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1481,6 +1455,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <marker date="1492652360111" expanded="true" signature="1147:1152" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1495,20 +1472,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/animation/Animation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="611" column="5" lean-forward="false" selection-start-line="611" selection-start-column="5" selection-end-line="611" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1516,6 +1484,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1523,23 +1492,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="285" column="33" lean-forward="false" selection-start-line="285" selection-start-column="33" selection-end-line="285" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="318" column="16" lean-forward="false" selection-start-line="318" selection-start-column="16" selection-end-line="318" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="60" lean-forward="false" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/ScoreBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/CellView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+        <state relative-caret-position="-18">
+          <caret line="61" column="39" lean-forward="false" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
           <folding>
             <element signature="docComment;class#CellView#0" expanded="false" />
             <element signature="docComment;field#TRANSLATE_DURATION#0;class#CellView#0" expanded="false" />
@@ -1552,31 +1538,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/gvsu/prestongarno/gui/GameTilePane.java">
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="86" column="16" lean-forward="false" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+        <state relative-caret-position="771">
+          <caret line="70" column="37" lean-forward="false" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
           <folding>
-            <element signature="docComment;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;field#PADDING#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;field#FADE_IN_DURATION#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;field#viewOverlay#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;field#rows#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;field#columns#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;method#GameTilePane#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;method#initialize#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;method#changeBoardSize#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;method#placeCell#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;method#getCell#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;method#update#0;class#GameTilePane#0" expanded="false" />
-            <element signature="method#isAnimating#0;class#GameTilePane#0" expanded="false" />
-            <element signature="docComment;method#displayGameMessage#0;class#GameTilePane#0" expanded="false" />
-            <element signature="method#displayGameMessage#0;class#GameTilePane#0" expanded="false" />
-            <element signature="e#10523#12275#0" expanded="false" />
-            <element signature="docComment;method#removeGameMessage#0;class#GameTilePane#0" expanded="false" />
-            <element signature="method#removeGameMessage#0;class#GameTilePane#0" expanded="false" />
-            <element signature="e#12649#12733#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/UndoStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-model/src/edu/gvsu/cis163/project3/NumberGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="279" column="39" lean-forward="false" selection-start-line="279" selection-start-column="39" selection-end-line="279" selection-end-column="39" />
+          <folding>
+            <element signature="docComment;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#status#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#rows#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#board#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;field#winningVal#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#NumberGame#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#NumberGame#1;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#createInstance#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getAt#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getRows#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getColumns#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#resizeBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="e#4391#4392#0" expanded="true" />
+            <element signature="e#4418#4419#0" expanded="true" />
+            <element signature="method#reset#0;class#NumberGame#0" expanded="false" />
+            <element signature="e#4752#4783#0" expanded="true" />
+            <element signature="method#resetScanners#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#setValues#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#setValues#0;class#NumberGame#0" expanded="false" />
+            <element signature="e#8516#8692#0" expanded="false" />
+            <element signature="e#8637#8686#0" expanded="false" />
+            <element signature="docComment;method#getIndex#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getIndex#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#slide#0;class#NumberGame#0" expanded="false" />
+            <element signature="e#9799#9800#0" expanded="true" />
+            <element signature="e#9847#9848#0" expanded="true" />
+            <element signature="docComment;method#slide#1;class#NumberGame#0" expanded="false" />
+            <element signature="e#10688#10708#0" expanded="false" />
+            <element signature="e#11281#11306#0" expanded="false" />
+            <element signature="method#notifyValueChanged#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#notifyCellMoved#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getFor#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#set#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNext#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNext#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getNextStandard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNextStandard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getNextSwapped#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#get#1;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#continuePlaying#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#continuePlaying#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#getStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#setStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#setStatus#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#prettyPrintBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#prettyPrintBoard#0;class#NumberGame#0" expanded="false" />
+            <element signature="e#17224#17424#0" expanded="false" />
+            <element signature="docComment;method#undo#0;class#NumberGame#0" expanded="false" />
+            <element signature="docComment;method#canMove#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#canMove#0;class#NumberGame#0" expanded="false" />
+            <element signature="method#getEmptyTiles#0;class#NumberGame#0" expanded="false" />
           </folding>
         </state>
       </provider>

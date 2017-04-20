@@ -60,7 +60,7 @@ public class CellView extends Label {
 		setText(Integer.toString(value));
 
 		// valueProperty changed animation
-		onValueChangedAnim = new ScaleTransition(SCALE_DURATION.multiply(2.0f), this);
+		onValueChangedAnim = new ScaleTransition(SCALE_DURATION, this);
 		onValueChangedAnim.setToX(1.1);
 		onValueChangedAnim.setToY(1.1);
 		onValueChangedAnim.setCycleCount(2);
@@ -91,8 +91,6 @@ public class CellView extends Label {
 
 	public Runnable translate(double toX, double toY, Runnable onComplete) {
 		requestLayout();
-		//moveAnim.setFromY(getLayoutY());
-		//moveAnim.setFromX(getLayoutX());
 		moveAnim.setToX(toX);
 		moveAnim.setToY(toY);
 		moveAnim.setOnFinished(event -> Platform.runLater(onComplete));

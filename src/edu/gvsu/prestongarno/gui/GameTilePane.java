@@ -31,9 +31,6 @@ import static javafx.scene.layout.Priority.*;
  ****************************************/
 public class GameTilePane extends GridPane implements GameView {
 
-
-	/** * True when animations are going on to prevent threading issues */
-	//private boolean ANIMATING; // <-- removed cause code smells
 	/*****************************************
 	 * the padding around the cells
 	 ****************************************/
@@ -182,9 +179,9 @@ public class GameTilePane extends GridPane implements GameView {
 	 ****************************************/
 	@Override
 	public void moveCell(int oldR, int oldC, int toRow, int toColumn) {
-		CellView toMove = getCell(oldR, oldC);
-		double layoutX = toMove.getLayoutX();
-		double layoutY = toMove.getLayoutY();
+		CellView toMove  = getCell(oldR, oldC);
+		double   layoutX = toMove.getLayoutX();
+		double   layoutY = toMove.getLayoutY();
 		getChildren().remove(toMove); // added to viewoverlay in translate
 		toMove.setPrefHeight(toMove.getHeight());
 		toMove.setPrefWidth(toMove.getWidth());
@@ -194,7 +191,7 @@ public class GameTilePane extends GridPane implements GameView {
 		viewOverlay.requestLayout();
 		toMove.layout();
 
-		System.out.println("MV cell(" + layoutX + "," + layoutY + " ()-> " + " virtual (" + toRow +","+ toColumn);
+		System.out.println("MV cell(" + layoutX + "," + layoutY + " ()-> " + " virtual (" + toRow + "," + toColumn);
 
 		translateAnd(toMove, toRow, toColumn, () -> {
 			viewOverlay.getChildren().remove(toMove);
@@ -289,7 +286,7 @@ public class GameTilePane extends GridPane implements GameView {
 			double yPos   = node.getLayoutY();
 			double height = ((CellView) node).getHeight();
 			double width  = ((CellView) node).getWidth();
-			if(xPos > getWidth() | yPos > getHeight() | xPos < 0 | yPos < 0) {
+			if (xPos > getWidth() | yPos > getHeight() | xPos < 0 | yPos < 0) {
 				throw new IllegalStateException();
 			}
 		});

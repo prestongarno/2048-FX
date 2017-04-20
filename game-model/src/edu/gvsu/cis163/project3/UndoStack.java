@@ -1,8 +1,5 @@
 package edu.gvsu.cis163.project3;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 
 /** **************************************************
  * easy-48 - edu.gvsu.prestongarno - by Preston Garno on 3/14/17
@@ -14,20 +11,21 @@ public class UndoStack {
 	private static UndoStack instance;
 	
 	/** the arraylist of prev. boards */
-	private ArrayList<int[][]> moves;
-	
+	private Entry tail;
+
 	/*****************************************
 	 * Private constructor
-	 ****************************************/
-	private UndoStack() {
-		this.moves = new ArrayList<>(10);
+	 ***************************************
+	 * @param entry*/
+	private UndoStack(Entry entry) {
+		this.tail = entry;
 	}
 	
 	/*****************************************
 	 * @return the UndoStack instance
 	 ****************************************/
 	public static UndoStack getInstance() {
-		return instance == null ? instance = new UndoStack() : instance;
+		return instance == null ? instance = new UndoStack(new Entry(null, null)) : instance;
 	}
 	
 	/*****************************************
@@ -36,20 +34,13 @@ public class UndoStack {
 	 ****************************************/
 	public void notifyMoved(NumberGame numberGame) {
 		int[][] move = new int[numberGame.getRows()][numberGame.getColumns()];
-		Arrays.stream(move).forEach(ints -> {
-			final int index = getIndex(move, ints);
-			for (int i = 0; i < ints.length; i++) {
-				move[index][i] = numberGame.getAt(index, i);
+		for (int r = 0; r < move.length; r++) {
+			for (int c = 0; c < move[0].length; c++) {
+				move[r][c] = numberGame.getAt(r, c);
 			}
-		});
-		moves.add(0, move);
-	}
-	
-	private static int getIndex(int[][] ref, int[] ints) {
-		for (int i = 0; i < ref.length; i++) {
-			if (ref[i] == ints) return i;
 		}
-		throw new IllegalArgumentException();
+		Entry crr = tail;
+		tail = new Entry(move, crr);
 	}
 	
 	/*****************************************
@@ -57,14 +48,31 @@ public class UndoStack {
 	 * @return the previous state of the game board
 	 ****************************************/
 	public int[][] popStack() {
-		if (moves.isEmpty()) throw new IllegalStateException();
-		else return moves.remove(0);
+		if (tail.previous == null) throw new IllegalStateException();
+		int[][] prev = tail.entry;
+		tail = tail.previous;
+		return prev;
 	}
 	
 	/**
 	 * Clears the stack
 	 */
 	public void clearStack() {
-		this.moves.clear();
+		this.tail = new Entry(null, null);
+	}
+
+	public int[][] peek() {
+		return this.tail.entry;
+	}
+
+	private static final class Entry {
+		final int[][] entry;
+
+		Entry previous;
+
+		private Entry(int[][] entry, Entry previous) {
+			this.entry = entry;
+			this.previous = previous;
+		}
 	}
 }
