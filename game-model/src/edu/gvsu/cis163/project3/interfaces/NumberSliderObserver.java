@@ -34,5 +34,10 @@ public interface NumberSliderObserver {
 	 * @param status the current status
 	 ****************************************/
 	void onGameStatusChanged(GameStatus status);
-	
+
+	/*****************************************
+	 * @param lastPlaced used to notify presenter/view
+	 *                     of last cell placed before the user loses the game
+	 ****************************************/
+	void onCellPlaced(Cell lastPlaced);
 }

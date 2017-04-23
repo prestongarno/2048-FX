@@ -32,18 +32,7 @@ public interface NumberSlider {
 	* TWO non-zero values at random location
 	****************************************/
   void reset();
-  
-	/*****************************************
-	* Set the game board to the desired values given in the 2D array.
-	* This method should use nested loops to copy each element from the
-	* provided array to your own internal array. Do not just assign the
-	* entire array object to your internal array object. Otherwise, your
-	* internal array may get corrupted by the array used in the JUnit
-	* test file. This method is mainly used by the JUnit tester.
-	* @param ref
-	****************************************/
-  void setValues(final int[][] ref);
-  
+
 	/*****************************************
 	* Insert one random tile into an empty spot on the board.
 	*

@@ -20,7 +20,7 @@ public class GameManager implements NumberSliderObserver {
 	/**
 	 * the model
 	 */
-	private final NumberSlider slider;
+	private final NumberGame slider;
 	/**
 	 * the context of the game
 	 */
@@ -50,7 +50,6 @@ public class GameManager implements NumberSliderObserver {
 	 ****************************************/
 	public GameManager(Context context, int rows, int columns) {
 		context.getGameView().initialize(rows, columns);
-		this.slider = new NumberGame(rows, columns, this);
 		this.context = context;
 		this.view = context.getGameView();
 		this.toolbar = context.getGameToolbar();
@@ -59,6 +58,9 @@ public class GameManager implements NumberSliderObserver {
 		this.buildToolbar(toolbar);
 		this.setStartMenu();
 		this.bindKeys();
+		this.slider = new NumberGame(rows, columns, this);
+		slider.placeRandomValue();
+		slider.placeRandomValue();
 	}
 
 	private void setStartMenu() {
@@ -67,8 +69,7 @@ public class GameManager implements NumberSliderObserver {
 
 		message.put("Start Game", () -> {
 			context.resume();
-			infoDisplay.displayScore("" + ((NumberGame) slider).getScore());
-			placeAll();
+			infoDisplay.displayScore("" + (slider).getScore());
 		});
 
 		view.displayGameMessage("2048-FX", message);
@@ -124,8 +125,8 @@ public class GameManager implements NumberSliderObserver {
 						try {
 							final Integer newValue = Integer.valueOf(results.get("WIN_VALUE"));
 							if (newValue < 0) throw new IllegalArgumentException();
-							slider.resizeBoard(((NumberGame) slider).getRows(),
-													 ((NumberGame) slider).getColumns(),
+							slider.resizeBoard(slider.rows(),
+													 (slider).columns(),
 													 newValue);
 							infoDisplay.setWinningValue("" + newValue);
 						} catch (NumberFormatException nf) {
@@ -169,15 +170,6 @@ public class GameManager implements NumberSliderObserver {
 		context.bindKey(KeyCode -> undoState(), "U");
 	}
 
-	private void placeAll() {
-		for (int r = 0; r < slider.rows(); r++) {
-			for (int c = 0; c < slider.columns(); c++) {
-				int at = slider.getAt(r, c);
-				if(at >0) view.placeCell(r, c, at);
-			}
-		}
-	}
-
 	/*****************************************
 	 * Undo game state and update GUI
 	 ****************************************/
@@ -186,8 +178,7 @@ public class GameManager implements NumberSliderObserver {
 			slider.undo();
 			view.clear();
 			infoDisplay.decrementMoveCount();
-			infoDisplay.displayScore("" + ((NumberGame) slider).getScore());
-			placeAll();
+			infoDisplay.displayScore("" + (slider).getScore());
 		} catch (IllegalStateException is) {
 			this.context.showError("Illegal move", "Already at last change!");
 		}
@@ -209,13 +200,12 @@ public class GameManager implements NumberSliderObserver {
 									 "Reset game?",
 									 confirmed -> {
 										 if (confirmed) {
+											 view.clear();
 											 view.removeGameMessage();
 											 slider.reset();
 											 toolbar.disableAll(false);
 											 infoDisplay.resetMoveCount();
-											 view.clear();
-											 infoDisplay.displayScore("" + ((NumberGame) slider).getScore());
-											 placeAll();
+											 infoDisplay.displayScore("" + (slider).getScore());
 										 }
 									 });
 	}
@@ -256,7 +246,7 @@ public class GameManager implements NumberSliderObserver {
 				toolbar.disableAll(true);
 
 				options.put("Continue playing", () -> {
-					((NumberGame) slider).continuePlaying(2);
+					(slider).continuePlaying(2);
 					context.resume();
 				});
 				options.put("Restart", this::reset);
@@ -264,7 +254,7 @@ public class GameManager implements NumberSliderObserver {
 				view.displayGameMessage("Congratulations, you've won!\nIt took you "
 														+ infoDisplay.getMoveCount()
 														+ " moves\nto get a score of\n"
-														+ (((NumberGame) slider).getScore() - 4), options);
+														+ ((slider).getScore() - 4), options);
 				break;
 
 			case USER_LOST:
@@ -273,8 +263,13 @@ public class GameManager implements NumberSliderObserver {
 				view.displayGameMessage("Game Over\nIt took you "
 														+ infoDisplay.getMoveCount()
 														+ " moves\nto get a score of\n"
-														+ (((NumberGame) slider).getScore() - 4), options);
+														+ ((slider).getScore() - 4), options);
 		}
+	}
+
+	@Override
+	public void onCellPlaced(Cell lastPlaced) {
+			view.placeCell(lastPlaced.row, lastPlaced.column, lastPlaced.value);
 	}
 
 	/*****************************************
@@ -282,14 +277,15 @@ public class GameManager implements NumberSliderObserver {
 	 ****************************************/
 	@Override
 	public void onSlideComplete() {
-		infoDisplay.displayScore("" + ((NumberGame) slider).getScore());
+		infoDisplay.displayScore("" + (slider).getScore());
+		System.out.println(slider.getCellCount());
 		Cell nextCell = slider.placeRandomValue();
 		if (nextCell == null) {
 			onGameStatusChanged(GameStatus.USER_LOST);
 		} else {
-			view.placeCell(nextCell.row, nextCell.column, nextCell.value);
-			view.update();
+			//view.placeCell(nextCell.row, nextCell.column, nextCell.value);
+			//view.update();
 		}
-		System.out.println(((NumberGame) slider).prettyPrintBoard());
+		System.out.println(slider.prettyPrintBoard());
 	}
 }

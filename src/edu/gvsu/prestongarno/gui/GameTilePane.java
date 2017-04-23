@@ -186,8 +186,8 @@ public class GameTilePane extends GridPane implements GameView {
 		toMove.setPrefHeight(toMove.getHeight());
 		toMove.setPrefWidth(toMove.getWidth());
 		viewOverlay.getChildren().add(toMove);
-		toMove.setLayoutX(layoutX);
-		toMove.setLayoutY(layoutY);
+		//toMove.setLayoutX(layoutX);
+		//toMove.setLayoutY(layoutY);
 		viewOverlay.requestLayout();
 		toMove.layout();
 
@@ -195,6 +195,7 @@ public class GameTilePane extends GridPane implements GameView {
 
 		translateAnd(toMove, toRow, toColumn, () -> {
 			viewOverlay.getChildren().remove(toMove);
+			this.getChildren().remove(toMove);
 			this.replaceCell(toMove, toRow, toColumn);
 		});
 	}

@@ -33,7 +33,7 @@ public class UndoStack {
 	 * @param numberGame the game instance
 	 ****************************************/
 	public void notifyMoved(NumberGame numberGame) {
-		int[][] move = new int[numberGame.getRows()][numberGame.getColumns()];
+		int[][] move = new int[numberGame.rows()][numberGame.columns()];
 		for (int r = 0; r < move.length; r++) {
 			for (int c = 0; c < move[0].length; c++) {
 				move[r][c] = numberGame.getAt(r, c);

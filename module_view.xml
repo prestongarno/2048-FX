@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_view" default="compile.module.view">
+  <dirname property="module.view.basedir" file="${ant.file.module_view}"/>
+  
+  <property name="module.jdk.home.view" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.view" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.view" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.view" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="view.output.dir" value="${module.view.basedir}/out/production/view"/>
+  <property name="view.testoutput.dir" value="${module.view.basedir}/out/test/view"/>
+  
+  <path id="view.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="view.module.production.classpath">
+    <path refid="${module.jdk.classpath.view}"/>
+    <pathelement location="${presenter.output.dir}"/>
+  </path>
+  
+  <path id="view.runtime.production.module.classpath">
+    <pathelement location="${view.output.dir}"/>
+    <path refid="presenter.runtime.production.module.classpath"/>
+  </path>
+  
+  <path id="view.module.classpath">
+    <path refid="${module.jdk.classpath.view}"/>
+    <pathelement location="${view.output.dir}"/>
+    <pathelement location="${presenter.testoutput.dir}"/>
+    <pathelement location="${presenter.output.dir}"/>
+  </path>
+  
+  <path id="view.runtime.module.classpath">
+    <pathelement location="${view.testoutput.dir}"/>
+    <pathelement location="${view.output.dir}"/>
+    <path refid="presenter.runtime.module.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.view">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.view">
+    <patternset refid="excluded.from.module.view"/>
+  </patternset>
+  
+  <path id="view.module.sourcepath">
+    <dirset dir="${module.view.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.view" depends="compile.module.view.production,compile.module.view.tests" description="Compile module view"/>
+  
+  <target name="compile.module.view.production" depends="register.custom.compilers,compile.module.presenter" description="Compile module view; production classes">
+    <mkdir dir="${view.output.dir}"/>
+    <javac2 destdir="${view.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.view}/javac">
+      <compilerarg line="${compiler.args.view}"/>
+      <bootclasspath refid="view.module.bootclasspath"/>
+      <classpath refid="view.module.production.classpath"/>
+      <src refid="view.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.view"/>
+    </javac2>
+    
+    <copy todir="${view.output.dir}">
+      <fileset dir="${module.view.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.view.tests" depends="register.custom.compilers,compile.module.view.production" description="compile module view; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.view" description="cleanup module">
+    <delete dir="${view.output.dir}"/>
+    <delete dir="${view.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_presenter" default="compile.module.presenter">
+  <dirname property="module.presenter.basedir" file="${ant.file.module_presenter}"/>
+  
+  <property name="module.jdk.home.presenter" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.presenter" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.presenter" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.presenter" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="presenter.output.dir" value="${module.presenter.basedir}/../out/production/presenter"/>
+  <property name="presenter.testoutput.dir" value="${module.presenter.basedir}/../out/test/presenter"/>
+  
+  <path id="presenter.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="presenter.module.production.classpath">
+    <path refid="${module.jdk.classpath.presenter}"/>
+    <pathelement location="${game-model.output.dir}"/>
+  </path>
+  
+  <path id="presenter.runtime.production.module.classpath">
+    <pathelement location="${presenter.output.dir}"/>
+    <path refid="game-model.runtime.production.module.classpath"/>
+  </path>
+  
+  <path id="presenter.module.classpath">
+    <path refid="${module.jdk.classpath.presenter}"/>
+    <pathelement location="${presenter.output.dir}"/>
+    <pathelement location="${game-model.testoutput.dir}"/>
+    <pathelement location="${game-model.output.dir}"/>
+  </path>
+  
+  <path id="presenter.runtime.module.classpath">
+    <pathelement location="${presenter.testoutput.dir}"/>
+    <pathelement location="${presenter.output.dir}"/>
+    <path refid="game-model.runtime.module.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.presenter">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.presenter">
+    <patternset refid="excluded.from.module.presenter"/>
+  </patternset>
+  
+  <path id="presenter.module.sourcepath">
+    <dirset dir="${module.presenter.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.presenter" depends="compile.module.presenter.production,compile.module.presenter.tests" description="Compile module presenter"/>
+  
+  <target name="compile.module.presenter.production" depends="register.custom.compilers,compile.module.game-model" description="Compile module presenter; production classes">
+    <mkdir dir="${presenter.output.dir}"/>
+    <javac2 destdir="${presenter.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.presenter}/javac">
+      <compilerarg line="${compiler.args.presenter}"/>
+      <bootclasspath refid="presenter.module.bootclasspath"/>
+      <classpath refid="presenter.module.production.classpath"/>
+      <src refid="presenter.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.presenter"/>
+    </javac2>
+    
+    <copy todir="${presenter.output.dir}">
+      <fileset dir="${module.presenter.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.presenter.tests" depends="register.custom.compilers,compile.module.presenter.production" description="compile module presenter; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.presenter" description="cleanup module">
+    <delete dir="${presenter.output.dir}"/>
+    <delete dir="${presenter.testoutput.dir}"/>
+  </target>
+</project>

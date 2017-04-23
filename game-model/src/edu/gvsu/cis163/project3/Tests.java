@@ -48,7 +48,7 @@ public class Tests {
 
 	@Test
 	public void testImpossibleGame() throws Exception {
-		for (int w = 0; w <100; w++) {
+		//for (int w = 0; w <100; w++) {
 
 			NumberGame ng = new NumberGame(10,5);
 			boolean offset = false;
@@ -56,19 +56,20 @@ public class Tests {
 				for (int c = 0; c < ng.columns(); c++) {
 					ng.setAt(r,c, offset ? 1 : 9);
 					offset = ! offset;
+					ng.setCellCount(ng.getCellCount()+1);
 				}
 			}
 			for (int i = 0; i < 5; i++) {
-				ng.setAt(0,i,i%2==0?8:7);
+				ng.setAt(9,i,i%2==0?8:7);
 			}
-			ng.setAt(0,0,0);
+			ng.setAt(4,0,0);
+			ng.setCellCount(ng.getCellCount()-1);
 			System.out.println(ng.getStatus());
 			System.out.println(ng.prettyPrintBoard());
-			ng.slide(SlideDirection.LEFT);
+			assertTrue(ng.slide(SlideDirection.LEFT));
 			System.out.println(ng.placeRandomValue());
 			System.out.println(ng.prettyPrintBoard());
 
-			assertFalse(ng.getStatus() == GameStatus.USER_LOST);
-		}
+			assertTrue(ng.getStatus() == GameStatus.USER_LOST);
 	}
 }

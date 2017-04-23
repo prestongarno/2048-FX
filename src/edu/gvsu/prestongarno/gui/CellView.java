@@ -29,7 +29,7 @@ public class CellView extends Label {
 	/**
 	 * Duration of the slide transition
 	 */
-	private final Duration TRANSLATE_DURATION = new Duration(200);
+	private final Duration TRANSLATE_DURATION = new Duration(170);
 	/**
 	 * Duration of the slide transition
 	 */
@@ -45,9 +45,6 @@ public class CellView extends Label {
 	 ****************************************/
 	private final FadeTransition        fade;
 	private final TranslateTransition   moveAnim;
-
-	private final Runnable fader;
-	private final Runnable translater;
 
 	/*****************************************
 	 * The GUI representation of a tile in the game
@@ -68,7 +65,7 @@ public class CellView extends Label {
 		onValueChangedAnim.setAutoReverse(true);
 
 		// assign fading animation
-		fade = new FadeTransition(SCALE_DURATION, this);
+		fade = new FadeTransition(SCALE_DURATION.multiply(2.0d), this);
 		fade.setAutoReverse(false);
 		fade.setCycleCount(1);
 
@@ -85,8 +82,6 @@ public class CellView extends Label {
 		this.setCacheHint(CacheHint.SPEED);
 		moveAnim = new TranslateTransition(TRANSLATE_DURATION, this);
 		moveAnim.setInterpolator(Interpolator.EASE_OUT);
-		translater = moveAnim::playFromStart;
-		fader = fade::playFromStart;
 	}
 
 	public Runnable translate(double toX, double toY, Runnable onComplete) {
@@ -94,7 +89,7 @@ public class CellView extends Label {
 		moveAnim.setToX(toX);
 		moveAnim.setToY(toY);
 		moveAnim.setOnFinished(event -> Platform.runLater(onComplete));
-		return translater;
+		return moveAnim::play;
 	}
 
 	public void translate(double toX, double toY) {
@@ -109,13 +104,13 @@ public class CellView extends Label {
 	public final Runnable fadeOut() {
 		fade.setFromValue(1.0);
 		fade.setToValue(0.0);
-		return this.fader;
+		return fade::play;
 	}
 
 	public final Runnable fadeIn() {
 		fade.setFromValue(0.0);
 		fade.setToValue(1.0);
-		return this.fader;
+		return fade::play;
 	}
 	/*****************************************
 	 * Set the label, background, and animate the cell changing
