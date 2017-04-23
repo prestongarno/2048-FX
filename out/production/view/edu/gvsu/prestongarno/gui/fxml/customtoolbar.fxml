@@ -1,7 +1,0 @@
-<?import javafx.scene.effect.DropShadow?>
-<fx:root type="javafx.scene.control.ToolBar" xmlns:fx="http://javafx.com/fxml">
-<!--    <effect>
-        <DropShadow blurType="TWO_PASS_BOX" height="77.93" offsetX="10.0"
-                    radius="30.3075" spread="0.1" width="45.3"/>
-    </effect>-->
-</fx:root>
